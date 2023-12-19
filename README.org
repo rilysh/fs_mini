@@ -1,0 +1,19 @@
+** fs_mini
+A small, header-only C++ file to work with filesystem I/O.
+
+** Example
+See the =test= folder.
+
+** Why?
+Mostly to satisfy my needs. Currently, C++11 don't have
+a "proper" set of APIs to work with filesystem I/O,
+and only C++17 introduced a new header called "filesystem".
+While I can use this STL header, it doesn't offer backward
+compatibility with C++11 (which I need to work on).
+
+There's an excellent implementation of STL "filesystem"
+at [[https://github.com/gulrak/filesystem][gulrak's]] GitHub, but for my purpose, it's _too large_.
+I don't need every single filesystem APIs, but only a few,
+so I made this.
+
+Please don't use this in production!
